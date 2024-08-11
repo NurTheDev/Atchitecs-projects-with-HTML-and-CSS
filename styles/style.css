@@ -134,8 +134,20 @@ main{
         width: 90%;
         padding: 20px;
     }
+    /* Main features section */
+    .features{
+        flex-direction: column-reverse;
+    }
+    .featuresContant{
+        text-align: center;
+    }
+    .features h2, .features p{
+        width: 100%;
+    }
 }
 /* Responsive for Mobile */
+
+/* Responsive for Tab */
 @media screen and (min-width: 688px) and (max-width: 992px) {
     .headerContant{
         width: 100%;
@@ -156,6 +168,16 @@ main{
     .headerContant p{
         width: 80%;
         padding: 20px;
+    }
+    .featuresContant{
+        width: 100%;
+    }
+    .featuresContant h2{
+        font-size: 2.4rem;
+        width: 100%;
+    }
+    .featuresContant p{
+        width: 100%;
     }
 }
 /* Responsive for Tab */
