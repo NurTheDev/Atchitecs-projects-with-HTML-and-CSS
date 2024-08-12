@@ -112,6 +112,62 @@ main{
     width: 78%;
     line-height: 26px;
 }
+/* ------------Second Section.. I name this saction Facility Section start from here--------------------
+ */
+ .Facility{
+    display: flex;
+    gap: 7%;
+    margin: 10% auto;
+ }
+ .facilityContant{
+    width: 50%;
+ }
+ .FacilityTitle h2{
+    color: #131313;
+    font-size: 2.8rem;
+    width: 700;
+    line-height: normal;
+ }
+ .FacilityTitle p{
+    color: #727272;
+    line-height: 26px;
+    padding: 24px 0px;
+ }
+ .facilityBox{
+    padding: 2%;
+    width: 80%;
+    margin: 30px auto;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+ }
+ .facilityBox h3{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    color: #131313;
+ }
+ .facilityBox p{
+    color: #727272;
+    line-height: 26px;
+    padding: 24px 0px;
+ }
+.facilityImg img{
+    width: 100%;
+}
+.facilityImg{
+    position: relative;
+    height: 100%;
+}
+.facilityImg::before{
+    background: #FF900E;
+    padding: 45px 42px;
+    content: "10+ Year Experince";
+    position: absolute;
+    bottom: -6%;
+    left: -12%;
+    border-radius: 8px;
+    color: #fff;
+}
 /* Responsive for Mobile */
 @media screen and (max-width: 687px) {
     nav{
