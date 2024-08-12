@@ -207,6 +207,38 @@ main{
     font: 600;
     color: #424242;
 }
+/* Footer Section start */
+footer{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+footer h2{
+    font-size: 2.8rem;
+    color: #131313;
+    font-weight: 700;
+}
+footer >p{
+    color: #727272;
+    line-height: 26px;
+    width: 540px;
+    margin: 20px auto;
+}
+.sponsors{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    align-items: center;
+}
+.copyright{
+    background: #FFF4E7;
+    border-radius: 8px;
+    padding: 40px 0px;
+    margin: 100px 0px;
+    color: #424242;
+    font-size: 20px;
+    line-height: normal;
+}
 /* Responsive for Mobile */
 @media screen and (max-width: 687px) {
     nav{
@@ -273,6 +305,20 @@ main{
     .ourAchivment{
         flex-direction: column;
         gap: 30px;
+    }
+    /* Footer */
+    footer p{
+        width: 100%;
+        padding: 0px 20px;
+        box-sizing: border-box;
+        margin-top: 10px;
+    }
+    .sponsors{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .sponsors img{
+        width: 40%;
     }
 }
 /* Responsive for Mobile */
@@ -351,6 +397,9 @@ main{
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         margin-top: 30px;
+    }
+    .sponsors img{
+        width: 15%;
     }
 }
 /* Responsive for Tab */
