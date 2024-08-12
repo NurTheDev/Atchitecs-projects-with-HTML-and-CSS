@@ -117,7 +117,7 @@ main{
  .Facility{
     display: flex;
     gap: 7%;
-    margin: 10% auto;
+    margin: 80px auto;
  }
  .facilityContant{
     width: 50%;
@@ -127,6 +127,8 @@ main{
     font-size: 2.8rem;
     width: 700;
     line-height: normal;
+    padding-left: 20px;
+    border-left: 5px solid #FF900E;    
  }
  .FacilityTitle p{
     color: #727272;
@@ -134,9 +136,9 @@ main{
     padding: 24px 0px;
  }
  .facilityBox{
-    padding: 2%;
+    padding: 30px 35px 0px;
     width: 80%;
-    margin: 30px auto;
+    margin: 30px 0px;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
  }
@@ -149,24 +151,61 @@ main{
  .facilityBox p{
     color: #727272;
     line-height: 26px;
-    padding: 24px 0px;
+    padding: 10px 0px 30px;
  }
 .facilityImg img{
     width: 100%;
 }
-.facilityImg{
-    position: relative;
-    height: 100%;
-}
-.facilityImg::before{
+.experienceBatch{
+    padding: 25px 42px;
     background: #FF900E;
-    padding: 45px 42px;
-    content: "10+ Year Experince";
-    position: absolute;
-    bottom: -6%;
-    left: -12%;
+    width: 200px;
     border-radius: 8px;
+    position: relative;
+    top: -95px;
+    left: -80px;
+}
+.experienceBatch h2{
+    font-size: 3rem;
     color: #fff;
+    font-weight: 700;
+}
+.experienceBatch p{
+    font-size: 22px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+}
+/* Some Facts section */
+.facts> h2{
+    font-size: 2.8rem;
+    color: #131313;
+    line-height: normal;
+    font-weight: 700;
+}
+.facts>p{
+    color: #727272;
+    line-height: 26px;
+    width: 50%;
+    margin-top: 20px;
+}
+.ourAchivment{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin-top: 80px;
+}
+.card{
+    border: 1px solid #FF900E;
+    padding: 45px 36px;
+    border-radius: 8px;
+}
+.card h2{
+    font-size: 2.8rem;
+    font: 600;
+    color: #424242;
 }
 /* Responsive for Mobile */
 @media screen and (max-width: 687px) {
@@ -199,6 +238,41 @@ main{
     }
     .features h2, .features p{
         width: 100%;
+    }
+    .Facility{
+        flex-direction: column;
+    }
+    .facilityContant{
+        width: 100%;
+    }
+    .FacilityTitle h2{
+        font-size: 2rem;
+    }
+    .facilityBox{
+        margin: 0px;
+    }
+    .experienceBatch{
+        width: 150px;
+        left: -30px;
+        top: -70px;
+        padding: 22px 28px;
+    }
+    .experienceBatch h2{
+        font-size: 2.3rem;
+    }
+    .experienceBatch p{
+        font-size: 18px;
+    }
+    .facts> h2{
+        text-align: center;
+    }
+    .facts>p{
+        width: 100%;
+        text-align: center;
+    }
+    .ourAchivment{
+        flex-direction: column;
+        gap: 30px;
     }
 }
 /* Responsive for Mobile */
@@ -234,6 +308,49 @@ main{
     }
     .featuresContant p{
         width: 100%;
+    }
+    .Facility{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .facilityContant{
+        width: 100%;
+    }
+    .FacilityTitle h2{
+        font-size: 2rem;
+    }
+    .facilityBox{
+        margin: 0px;
+    }
+
+    .facilityImg{
+        width: 70%;
+        margin: auto;
+    }
+    .experienceBatch{
+        width: 150px;
+        left: -30px;
+        top: -70px;
+        padding: 22px 28px;
+    }
+    .experienceBatch h2{
+        font-size: 2.3rem;
+    }
+    .experienceBatch p{
+        font-size: 18px;
+    }
+    .facts> h2{
+        text-align: center;
+    }
+    .facts>p{
+        width: 100%;
+        text-align: center;
+    }
+    .ourAchivment{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-top: 30px;
     }
 }
 /* Responsive for Tab */
